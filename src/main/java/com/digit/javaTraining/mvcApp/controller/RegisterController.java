@@ -30,10 +30,10 @@ public class RegisterController extends HttpServlet {
 		
 		boolean b= bankApp.register();
 		if(b==true) {
-			resp.sendRedirect("/MVC_BankApp/RegisterSuccess.html");
+			resp.sendRedirect("/BankApplication/RegisterSuccess.html");
 		}
 		else {
-			resp.sendRedirect("/MVC_BankApp/RegisterFail.html");
+			resp.sendRedirect("/BankApplication/RegisterFail.html");
 		}
 		
 	}

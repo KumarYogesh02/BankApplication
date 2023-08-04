@@ -29,7 +29,7 @@ public class TransferMoneyController extends HttpServlet{
         
         b = ts.transfermoney();
         if(b==true) {
-        	resp.sendRedirect("/Project1/TransferSuccess.html");
+        	resp.sendRedirect("/BankApplication/TransferSuccess.html");
         }
         
 	}

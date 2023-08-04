@@ -31,10 +31,10 @@ public class LoanController extends HttpServlet{
 			session.setAttribute("tenure", al.getTenure());
 			session.setAttribute("interest", al.getInterest());
 			session.setAttribute("desc", al.getDescription());
-			resp.sendRedirect("/MVC_BankApp/LoanDetail.jsp");
+			resp.sendRedirect("/BankApplication/LoanDetail.jsp");
 		}
 		else {
-			resp.sendRedirect("/MVC_BankApp/LoanDetailFail.jsp");
+			resp.sendRedirect("/BankApplication/LoanDetailFail.jsp");
 		}
 
 	}

@@ -28,10 +28,10 @@ public class ChangePasswordController extends HttpServlet {
 		bankApp.setP3(Integer.parseInt(req.getParameter("cpwd")));
 		boolean b= bankApp.changePassword();
 		if(b==true) {
-			resp.sendRedirect("/MVC_BankApp/PasswordChangeSuccess.html");
+			resp.sendRedirect("/BankApplication/PasswordChangeSuccess.html");
 		}
 		else {
-			resp.sendRedirect("/MVC_BankApp/PasswordChangeFail.html");
+			resp.sendRedirect("/BankApplication/PasswordChangeFail.html");
 		}
 	}
 

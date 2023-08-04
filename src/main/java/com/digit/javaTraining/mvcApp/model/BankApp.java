@@ -259,8 +259,7 @@ public class BankApp {
 				this.setAccno(res.getInt("Accno"));
 				this.setCust_name(res.getString("customer_name"));
 				this.setBank_name(res.getString("Bank_name"));
-				this.setPin(res.getInt("pin"));
-				
+				this.setPin(res.getInt("Pin"));
 
 				return true;
 

@@ -21,7 +21,7 @@ public class CheckBalanceController extends HttpServlet {
 		session = req.getSession();
 		
 		int accno=(int) session.getAttribute("accno");
-		
+				
 		BankApp bankApp= new BankApp();
 		bankApp.setAccno(accno);
 		boolean b= bankApp.checkBalance();
@@ -29,11 +29,11 @@ public class CheckBalanceController extends HttpServlet {
 			
 			session.setAttribute("balance", bankApp.getBalance());
 			
-			resp.sendRedirect("/MVC_BankApp/Balance.jsp");
+			resp.sendRedirect("/BankApplication/Balance.jsp");
 			
 		}
 		else {
-			resp.sendRedirect("/MVC_BankApp/BalanceFail.jsp");
+			resp.sendRedirect("/BankApplication/BalanceFail.jsp");
 		}
 	}
 	

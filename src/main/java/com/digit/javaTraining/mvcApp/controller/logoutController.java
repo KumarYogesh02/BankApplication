@@ -17,7 +17,7 @@ public class logoutController extends HttpServlet{
 		session = req.getSession();
 		session.invalidate();
 		
-		resp.sendRedirect("/Project1/Welcome.html");
+		resp.sendRedirect("/BankApplication/Welcome.html");
 	}
 
 }
